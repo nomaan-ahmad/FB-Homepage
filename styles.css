@@ -1,0 +1,130 @@
+/******** Global ***********/
+:root {
+    --fb-blue-color : #1877F2;
+    --fb-green-color : #42B72A;
+    --input-border : rgb(248, 237, 237);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F0F2F5;
+}
+
+/* --------------- Main ----------- */
+main {
+    background-color: #F0F2F5;
+    height: 600px;
+    width: 1400px;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ------------------- page ------------ */
+.page {
+    padding: 5px;
+}
+
+/* --------------- Left section -------------*/
+
+.left {
+    width: 40%;
+}
+.left > * {
+    margin: 10px auto;
+}
+
+.left .heading {
+    font-weight: bolder;
+    color: var(--fb-blue-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.left .paragraph {
+    font-weight: 500;
+    font-size: 30px;
+}
+/*--------------------- Right section  ------------------------ */
+
+.right {
+    width: 25%;
+}
+.right form{
+    background-color: white;
+    padding: 10px;
+    box-shadow: gray 0px 5px 15px;
+    border-radius: 5px;
+}
+/********* Form  **********/
+
+form .top {
+    border-bottom: 0.1px solid var(--input-border);
+}
+.form input, .top a {
+    display: block;
+    margin : 10px auto;
+    width : 100%;
+    border-radius: 5px;
+}
+
+input {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.form input[type="text"], .form input[type="password"] {
+    border-radius: 5px;
+    border: 0.1px solid var(--input-border);
+    padding-left: 10px;
+}
+.top a {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: small;
+}
+
+.top a:hover {
+    text-decoration: underline;
+}
+.button.login, .button.signup {
+    font-size: large;
+    font-weight: bold;
+}
+
+.button.login {
+    background-color: var(--fb-blue-color);
+    border: none;
+    color: aliceblue;
+    width: 100%;
+}
+
+.button.signup {
+    margin-top: 15px;
+    width: 50%;
+    background-color: var(--fb-green-color);
+    color: aliceblue;
+    border: 1px solid var(--fb-green-color);
+    padding: 3px 0;
+}
+
+/********* Last paragraph of right section  **********/
+.right #brand-page {
+    font-size: small;
+    margin-top: 50px;
+    text-align: center;
+}
+#black-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
